@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: #f7f7f7;
+}
+
+.container{
+    background-color: red;
+    width: 70%;
+    margin: auto;
+    min-height: 100vh;
+    position: relative;
+}
+
+.top-title{
+    background-color: #198754;
+    padding: 1%;
+    text-align: center;
+    border-bottom: 3px solid #555;
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    background-color: blue;
+    padding: 0;
+}
+
+header ul li{
+    background-color: gold;
+    padding: 1%;
+    width: 20%;
+    border: 1px solid;
+    text-align: center;
+}
+
+.todo-container{
+    background-color: blue;
+    padding: 1%;
+}
+
+.todo-list{
+    display: flex;
+    margin: 1% 0;
+    background-color: brown;
+    padding: 1% 0.5%;
+}
+
+.todo-list .todo-head{
+    width: 75%;
+    padding: 0 1%;
+}
+
+.todo-list .todo-tools{
+    width: 25%;
+}
+
+.todo-list .todo-due{
+    margin: 1% 0;
+}
+
+.todo-tools ul{
+    display: flex;
+    list-style: none;
+}
+
+.todo-tools ul li, .todo-tools ul input[type="checkbox"]{
+    padding: 2% 6%;
+    background-color: chartreuse;
+    margin: 0 2%;
+}
+
+#search-container{
+    height: 100px;
+    background-color: burlywood;
+    display: none;
+}
+
+#add-todo-container{
+    background-color: white;
+    display: none;
+    width: 60%;
+    margin: 5% 20%;
+    z-index: 2;
+    position: absolute;
+    padding: 2%;
+}
+
+.add-todo-container-cover{
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    display: none;
+}
+
+#add-todo-container h2{
+    text-align: center;
+    padding: 2%;
+    background-color: wheat;
+    margin: 2% 0 5%;
+}
+
+#add-todo-container label{
+    font-size: 20px;
+}
+
+#add-todo{
+    width: 99%;
+    font-size: 20px;
+    padding: 0.5% 1%;
+    resize: none;
+}
+
+#add-todo-due-date, #add-todo-due-time{
+    padding: 1% 2%;
+}
+
+#add-todo-submit, #add-todo-reset{
+    height: 30px;
+    font-size: 20px;
+    margin: 0 2%;
+}
