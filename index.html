@@ -1,81 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>AT Dilakshan || ToDo App</title>
 
-    <link rel="stylesheet" href="style.css">
-
-    <title>ToDo App</title>
-
-</head>
-<body>
-
-    <div class="add-todo-container-cover" id="add-todo-container-cover">
-        <div id="add-todo-container">
-            <h2>Add add ToDo</h2>
-            <form action="" id="add-todo-form">
-                <label for="add-todo">Title : </label><br>
-                <textarea name="add-todo" id="add-todo" cols="30" rows="10"></textarea>
-                <br><br>
-                <label for="add-todo-due">Due : </label><br>
-                <input type="date" name="add-todo-due-date" id="add-todo-due-date">
-                <input type="time" name="add-todo-due-time" id="add-todo-due-time">
-                <br><br>
-                <input type="reset" value="Reset" id="add-todo-reset">
-                <input type="submit" value="Submit" id="add-todo-submit">
-            </form>
-        </div>
-    </div>
-
+        <!-- icon link here -->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     
-    <div class="container">
-
-        <div class="top-title">
-            <h1>ToDo App</h1>
-            <h4>Created By A.Dilakshan</h4>
-        </div>
-
-        <header>
-            <ul>
-                <li onclick="addbtn()">Add New ToDo</li>
-                <li onclick="viewallbtn()">View All</li>
-                <li onclick="completedbtn()">Completed</li>
-                <li onclick="incompletedbtn()">InCompleted</li>
-                <li onclick="searchbtn()">Search</li>
-            </ul>
-        </header>
-
-
-        <div class="todo-container" id="todo-container">
-
-            <div class="todo-list" id="todo-list">
-
-                <div class="todo-head">
-                    <div class="todo">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, quam dolorem. Nesciunt, molestiae illo iure, tempora ips am rerum voluptatum laboriosam sapiente iste porro esse. Voluptate dolores temporibus ratione ea consequuntur.
-                    </div>
-                    <div class="todo-due">12th May, 2022</div>
-                </div>
-
-                <div class="todo-tools">
-                    <ul>
-                        <input type="checkbox" name="mark" id="mark">
-                        <li>Edit</li>
-                        <li>Delete</li>
-                    </ul>
-                </div>
-
+        <!-- css here -->
+        <link rel="stylesheet" href="style.css">
+  
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="title">
+                <h1>ToDo App</h1>
+                <h3>Created By <a href="http://www.atdilakshan.github.io">AT Dilakshan</a></h3>
             </div>
-
+            <div class="task-input">
+                <input type="text" placeholder="Add a new task">
+            </div>
+            <div class="controls">
+                <div class="filters">
+                <span class="active" id="all">All</span>
+                <span id="pending">Pending</span>
+                <span id="completed">Completed</span>
+                </div>
+                <button class="clear-btn">Clear All</button>
+            </div>
+            <ul class="task-box"></ul>
         </div>
-
-        <div id="search-container"></div>
-
-    </div>
     
-    <script src="main.js"></script>
-
-</body>
+        <!-- js here -->
+        <script src="main.js"></script>
+  
+    </body>
 </html>
